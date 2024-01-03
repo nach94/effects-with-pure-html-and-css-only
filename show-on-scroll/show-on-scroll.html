@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <img src="img/alberta-2297204_640.jpg" alt="example image">
+        <img src="img/Café helado con Leche condensada.webp" alt="example image">
+        <img src="img/car-2942982_1920.webp" alt="example image">
+        <img src="img/forest-3119826_1280.webp" alt="example image">
+        <img src="img/Frappé de café con chocolate (1).webp" alt="example image">
+        <img src="img/Granizado de café con vainilla.webp" alt="example image">
+        <img src="img/jesus-3759617_1280.webp" alt="example image">
+        <img src="img/mountains-1587287_640.jpg" alt="example image">
+        <img src="img/river-219972_640.jpg" alt="example image">
+        <img src="img/road-1072821_640.jpg" alt="example image">
+        <img src="img/sunset-2080072_640.jpg" alt="example image">
+        <img src="img/Tiramisú de cafe.webp" alt="example image">
+        <img src="img/alberta-2297204_640.jpg" alt="example image">
+        <img src="img/Café helado con Leche condensada.webp" alt="example image">
+        <img src="img/car-2942982_1920.webp" alt="example image">
+        <img src="img/forest-3119826_1280.webp" alt="example image">
+        <img src="img/Frappé de café con chocolate (1).webp" alt="example image">
+        <img src="img/Granizado de café con vainilla.webp" alt="example image">
+        <img src="img/jesus-3759617_1280.webp" alt="example image">
+        <img src="img/mountains-1587287_640.jpg" alt="example image">
+        <img src="img/river-219972_640.jpg" alt="example image">
+        <img src="img/road-1072821_640.jpg" alt="example image">
+        <img src="img/sunset-2080072_640.jpg" alt="example image">
+        <img src="img/Tiramisú de cafe.webp" alt="example image">
+    </div>
+</body>
+
+<style>
+    .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 1em;
+        max-width: 800px;
+        margin: auto;
+    }
+
+    .container img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 4/3;
+        object-fit: cover;
+        view-timeline-name: --blocks;
+        view-timeline-axis: block;
+        animation-timeline: --blocks;
+        animation-name: show;
+        animation-range: entry 45% cover 50%;
+        animation-fill-mode: both;
+    }
+
+    @keyframes show {
+        from {
+            opacity: 0;
+            transform: translatey(5%);
+            scale: 95%;
+        }
+
+        to {
+            opacity: 1;
+            transform: translatey(0%);
+            scale: 100%;
+        }
+    }
+</style>
+
+</html>
